@@ -8,7 +8,7 @@ import json
 # Please login and get your API key from  https://clarifai.com/settings/security
 from getpass import getpass
 # CLARIFAI_PAT = getpass()
-CLARIFAI_PAT = "6dd0327cc2a145f6987b487a76e03f43" # User's Personal Access Tokens of Clarifai
+CLARIFAI_PAT = getpass() # User's Personal Access Tokens of Clarifai
 
 # Import the required modules
 from langchain.llms.clarifai import Clarifai
