@@ -3,3 +3,4 @@ test.py
 *.ipynb
 LLama2_Clarifai_API_Int_with_parser.py
 LLama2_Clarifai_API_Integration.py
+*__pycache__
