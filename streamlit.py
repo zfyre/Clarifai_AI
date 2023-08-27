@@ -13,10 +13,11 @@ user_input = st.text_input(':violet[How can I help You?]', value="", max_chars=N
 
 def search():
     out = GPT_run(user_input)
-    st.write(out.description); st.divider()
-    st.code(out.code); st.divider()
-    st.code(out.input, out.expected_output); st.divider()
-    # st.code(out.expected_output); st.divider()
+    st.write(':violet[How can I help You?]',out.description); st.divider()
+    st.code(':violet[How can I help You?]',out.code); st.divider()
+    st.write(':violet[How can I help You?]',out.code_description); st.divider()
+    st.code(':violet[How can I help You?]',out.input, out.expected_output); st.divider()
+    st.code(out.expected_output); st.divider()
 
 st.button('search',on_click=search())
 
