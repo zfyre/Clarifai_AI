@@ -1,4 +1,5 @@
 import json
+import streamlit as st
 # Install required dependencies
 # ! pip install clarifai
 # ! pip install -upgrade langchain
@@ -6,9 +7,9 @@ import json
 
 
 # Please login and get your API key from  https://clarifai.com/settings/security
-from getpass import getpass
+
 # CLARIFAI_PAT = getpass()
-CLARIFAI_PAT = getpass() # User's Personal Access Tokens of Clarifai
+CLARIFAI_PAT = st.text_input(':violet[Please login and get your API key from  https://clarifai.com/settings/security ]', type="password") # User's Personal Access Tokens of Clarifai
 
 # Import the required modules
 from langchain.llms.clarifai import Clarifai
